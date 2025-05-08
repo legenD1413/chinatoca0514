@@ -6,7 +6,7 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Quote } from "lucide-react"
 import Image from "next/image"
 import { toast } from "sonner"
 
@@ -58,7 +58,7 @@ export default function ContactPage() {
       {/* Map Background Section */}
       <section className="relative h-[300px] w-full">
         <div className="absolute inset-0 z-0">
-          <Image src="/api/placeholder?width=1600&height=300" alt="Map" fill className="object-cover" priority />
+          <Image src="/contactus.jpg" alt="Map" fill className="object-cover" priority />
         </div>
       </section>
 
@@ -75,11 +75,11 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Form and Info Section */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-white py-16">
         <div className="container px-4 md:px-6">
-          <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-5">
+          <div className="mx-auto grid max-w-6xl gap-8 lg:grid-cols-2">
             {/* Contact Form */}
-            <div className="rounded-xl bg-white p-6 shadow-md lg:col-span-3">
+            <div className="rounded-xl bg-white p-6 shadow-md">
               {isSubmitted ? (
                 <div className="flex flex-col items-center justify-center space-y-4 py-12 text-center">
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
@@ -97,12 +97,6 @@ export default function ContactPage() {
                   <p className="text-gray-500">
                     Your message has been sent successfully. We'll get back to you as soon as possible.
                   </p>
-                  <Button
-                    onClick={() => setIsSubmitted(false)}
-                    className="mt-4 bg-royalblue-700 hover:bg-royalblue-800"
-                  >
-                    Send Another Message
-                  </Button>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -150,13 +144,12 @@ export default function ContactPage() {
 
                   <div className="space-y-2">
                     <label htmlFor="website" className="text-sm font-medium">
-                      Website URL <span className="text-red-500">*</span>
+                      Website URL
                     </label>
                     <Input 
                       id="website" 
                       type="url" 
                       placeholder="Please enter the website" 
-                      required 
                       value={formData.website}
                       onChange={handleChange}
                     />
@@ -188,44 +181,86 @@ export default function ContactPage() {
             </div>
 
             {/* Contact Information */}
-            <div className="rounded-xl bg-royalblue-700 p-6 text-white lg:col-span-2">
-              <div className="space-y-8">
-                {/* Email Section */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Mail className="h-6 w-6" />
-                    <h3 className="text-xl font-bold">Email</h3>
+            <div className="flex flex-col gap-8">
+              {/* We Promise Section */}
+              <div className="rounded-xl bg-white p-6 shadow-md">
+                <h2 className="mb-6 text-2xl font-bold">Contact Information</h2>
+                <div className="space-y-6">
+                  {/* Email Section */}
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2">
+                      <Mail className="h-6 w-6 text-royalblue-600" />
+                      <h3 className="text-xl font-bold text-gray-900">Email</h3>
+                    </div>
+                    <div className="space-y-2">
+                      <div className="flex items-center gap-2">
+                        <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
+                        <p className="text-gray-600">Sales: sales@chinato.ca</p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
+                        <p className="text-gray-600">Support: support@chinato.ca</p>
+                      </div>
+                      <div className="flex items-center gap-2">
+                        <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
+                        <p className="text-gray-600">Info: info@chinato.ca</p>
+                      </div>
+                    </div>
                   </div>
-                  <div className="space-y-2">
-                    <p className="font-medium">Sales:</p>
-                    <p>sales@chinato.ca</p>
-                    <p className="font-medium">Customer Service:</p>
-                    <p>support@chinato.ca</p>
-                    <p className="font-medium">Other Inquiries:</p>
-                    <p>info@chinato.ca</p>
+
+                  {/* Telephone Section */}
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2">
+                      <Phone className="h-6 w-6 text-royalblue-600" />
+                      <h3 className="text-xl font-bold text-gray-900">Telephone</h3>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
+                      <p className="text-gray-600">+1-604-123-4567 (24 hours customer support)</p>
+                    </div>
+                  </div>
+
+                  {/* Address Section */}
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-2">
+                      <MapPin className="h-6 w-6 text-royalblue-600" />
+                      <h3 className="text-xl font-bold text-gray-900">Address</h3>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
+                      <p className="text-gray-600">
+                        ChinaTo.ca, 123 Logistics Way,<br />
+                        Vancouver, BC, V6B 1A9,<br />
+                        Canada
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                {/* Telephone Section */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <Phone className="h-6 w-6" />
-                    <h3 className="text-xl font-bold">Telephone</h3>
-                  </div>
-                  <p>+1-604-123-4567 (24 hours customer support)</p>
+              {/* Testimonial Section */}
+              <div className="rounded-xl bg-white p-6 shadow-md">
+                <div className="mb-4 text-royalblue-600">
+                  <Quote className="h-10 w-10" />
                 </div>
-
-                {/* Address Section */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                    <MapPin className="h-6 w-6" />
-                    <h3 className="text-xl font-bold">Address</h3>
+                <p className="mb-6 text-gray-700">
+                  ChinaTo.ca has been the best solution for my business. Their customer service team is incredibly responsive
+                  and helpful. I highly recommend their services to anyone looking for reliable logistics solutions.
+                </p>
+                <div className="flex items-center gap-4">
+                  <div className="h-12 w-12 overflow-hidden rounded-full">
+                    <Image
+                      src="/placeholder.svg?height=48&width=48"
+                      alt="Customer"
+                      width={48}
+                      height={48}
+                      className="h-full w-full object-cover"
+                    />
                   </div>
-                  <p>
-                    ChinaTo.ca, 123 Logistics Way, <br />
-                    Vancouver, BC, V6B 1A9, <br />
-                    Canada
-                  </p>
+                  <div>
+                    <p className="font-semibold">Sarah Johnson</p>
+                    <p className="text-sm text-gray-500">Founder @ TechGadgets Inc.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -340,7 +375,7 @@ export default function ContactPage() {
               <Button size="lg" className="bg-white text-royalblue-700 hover:bg-gray-100">
                 Get a Free Quote
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-700">
+              <Button size="lg" variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">
                 Talk to an Expert
               </Button>
             </div>

@@ -23,7 +23,9 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Button className="bg-royalblue-700 hover:bg-royalblue-800">Our Services</Button>
-                <Button variant="outline">Contact Us</Button>
+                <Button variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">
+                  Contact Us
+                </Button>
               </div>
             </div>
             <div className="flex items-center justify-center">
@@ -277,7 +279,7 @@ export default function AboutPage() {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Button className="bg-white text-royalblue-800 hover:bg-gray-100">Get a Quote</Button>
-              <Button variant="outline" className="border-white text-white hover:bg-royalblue-700">
+              <Button variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">
                 Contact Us
               </Button>
             </div>

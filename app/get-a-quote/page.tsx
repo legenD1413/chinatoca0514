@@ -141,13 +141,12 @@ export default function GetAQuotePage() {
 
                   <div className="space-y-2">
                     <label htmlFor="website" className="text-sm font-medium">
-                      Website URL <span className="text-red-500">*</span>
+                      Website URL
                     </label>
                     <Input 
                       id="website" 
                       type="url" 
                       placeholder="Please enter the website" 
-                      required 
                       value={formData.website}
                       onChange={handleChange}
                     />
@@ -189,6 +188,10 @@ export default function GetAQuotePage() {
                           <SelectItem value="amazon">Amazon</SelectItem>
                           <SelectItem value="ebay">eBay</SelectItem>
                           <SelectItem value="etsy">Etsy</SelectItem>
+                          <SelectItem value="tiktok">TikTok</SelectItem>
+                          <SelectItem value="temu">Temu</SelectItem>
+                          <SelectItem value="walmart">Walmart</SelectItem>
+                          <SelectItem value="yahoo">Yahoo</SelectItem>
                           <SelectItem value="other">Other</SelectItem>
                         </SelectContent>
                       </Select>

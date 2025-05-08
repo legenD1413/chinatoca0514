@@ -334,7 +334,7 @@ export default function PricePage() {
               <Button size="lg" className="bg-white text-royalblue-700 hover:bg-gray-100">
                 Get a Free Quote
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-600">
+              <Button size="lg" variant="outline" className="border-white bg-white text-royalblue-600 hover:bg-gray-100">
                 Talk to an Expert
               </Button>
             </div>

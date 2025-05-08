@@ -37,7 +37,7 @@ export default function Home() {
               <Button size="lg" className="bg-blue-700 text-white hover:bg-blue-800">
                 Get A Quote
               </Button>
-              <Button variant="outline" size="lg" className="border-white text-white hover:bg-gray-700">
+              <Button variant="outline" size="lg" className="border-white bg-white text-blue-700 hover:bg-gray-100">
                 Learn More
               </Button>
             </div>
@@ -339,7 +339,7 @@ export default function Home() {
               <Button size="lg" className="bg-white text-blue-800 hover:bg-gray-100">
                 Get a Free Quote
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-blue-700">
+              <Button size="lg" variant="outline" className="border-white bg-white text-blue-700 hover:bg-gray-100">
                 Talk to an Expert
               </Button>
             </div>

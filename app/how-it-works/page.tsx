@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 <Button size="lg" className="bg-royalblue-700 text-white hover:bg-royalblue-800">
                   Sign Up Free
                 </Button>
-                <Button size="lg" variant="outline" className="border-white text-white hover:bg-gray-700">
+                <Button size="lg" variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">
                   Talk to Expert
                 </Button>
               </div>

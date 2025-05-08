@@ -37,7 +37,7 @@ export default function B2BFulfillment() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-royalblue-700 text-royalblue-700 hover:bg-royalblue-50"
+                className="border-white bg-white text-royalblue-700 hover:bg-gray-100"
               >
                 Talk to Expert
               </Button>
