@@ -26,7 +26,7 @@ export default function B2BFulfillment() {
               maintaining inventory accuracy, and ensuring timely deliveries becomes increasingly complex.
             </p>
             <p className="mx-auto max-w-[800px] text-gray-600 md:text-lg">
-              ChinaTo.ca provides specialized B2B fulfillment services designed for businesses shipping large volumes
+              SinoPrimeShipping provides specialized B2B fulfillment services designed for businesses shipping large volumes
               from China to Canadian retailers, distributors, and wholesalers. Our streamlined process ensures your
               products reach your business customers efficiently and cost-effectively.
             </p>
@@ -122,7 +122,7 @@ export default function B2BFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505091413.png"
                 width={600}
                 height={400}
                 alt="B2B Fulfillment Services"
@@ -269,7 +269,7 @@ export default function B2BFulfillment() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505091432.jpg"
                 width={600}
                 height={400}
                 alt="B2B Fulfillment Benefits"
@@ -277,9 +277,9 @@ export default function B2BFulfillment() {
               />
             </div>
             <div className="flex flex-col justify-center space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter">Benefits of B2B Fulfillment with ChinaTo.ca</h2>
+              <h2 className="text-3xl font-bold tracking-tighter">Benefits of B2B Fulfillment with SinoPrimeShipping</h2>
               <p className="max-w-[600px] text-gray-500 md:text-lg">
-                Partner with ChinaTo.ca for your B2B fulfillment needs and experience these advantages:
+                Partner with SinoPrimeShipping for your B2B fulfillment needs and experience these advantages:
               </p>
               <ul className="space-y-2">
                 {[
@@ -424,7 +424,7 @@ export default function B2BFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/1500846.jpg"
                 width={500}
                 height={400}
                 alt="HomeGoods Direct Case Study"
@@ -492,7 +492,7 @@ export default function B2BFulfillment() {
                 Ready to Scale Your Wholesale Business?
               </h2>
               <p className="max-w-[700px] text-royalblue-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get started with ChinaTo.ca today and experience seamless B2B fulfillment
+                Get started with SinoPrimeShipping today and experience seamless B2B fulfillment
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">

@@ -22,9 +22,9 @@ export default function Home() {
             {/* Logo section added here */}
             <div className="flex justify-center items-center mb-6">
               <div className="relative w-[120px] h-[60px]">
-                <Image src="/ku-logo2.png" alt="ChinaTo.ca Logo" fill className="object-contain" />
+                <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
               </div>
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-md">ChinaTo.ca</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl text-white drop-shadow-md">SinoPrimeShipping</h1>
             </div>
             <h2 className="text-xl md:text-2xl lg:text-3xl text-white drop-shadow-md">
               The <span className="text-blue-500 drop-shadow-md">Fulfillment Solution</span> That Knows China-Canada Shipping Best
@@ -101,7 +101,7 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/api/placeholder?width=600&height=400"
+                src="/1200675.png"
                 width={600}
                 height={400}
                 alt="Fast Shipping"
@@ -282,7 +282,7 @@ export default function Home() {
             {[
               {
                 quote:
-                  "ChinaTo.ca transformed our supply chain. Their attention to detail and reliability have made our business more efficient and our customers happier.",
+                  "SinoPrimeShipping transformed our supply chain. Their attention to detail and reliability have made our business more efficient and our customers happier.",
                 author: "Sarah Johnson",
                 company: "TechGadgets Inc.",
                 image: "/api/placeholder?width=60&height=60",
@@ -332,7 +332,7 @@ export default function Home() {
                 Ready to Simplify Your Logistics?
               </h2>
               <p className="max-w-[700px] text-blue-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get started with ChinaTo.ca today and experience seamless shipping from China to Canada
+                Get started with SinoPrimeShipping today and experience seamless shipping from China to Canada
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">

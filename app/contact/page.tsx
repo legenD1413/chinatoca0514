@@ -186,13 +186,13 @@ export default function ContactPage() {
               <div className="rounded-xl bg-white p-6 shadow-md">
                 <h2 className="mb-6 text-2xl font-bold">Contact Information</h2>
                 <div className="space-y-6">
-                  {/* Email Section */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
+                {/* Email Section */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
                       <Mail className="h-6 w-6 text-royalblue-600" />
                       <h3 className="text-xl font-bold text-gray-900">Email</h3>
-                    </div>
-                    <div className="space-y-2">
+                  </div>
+                  <div className="space-y-2">
                       <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
                         <p className="text-gray-600">Sales: sales@chinato.ca</p>
@@ -205,24 +205,24 @@ export default function ContactPage() {
                         <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
                         <p className="text-gray-600">Info: info@chinato.ca</p>
                       </div>
-                    </div>
                   </div>
+                </div>
 
-                  {/* Telephone Section */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
+                {/* Telephone Section */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
                       <Phone className="h-6 w-6 text-royalblue-600" />
                       <h3 className="text-xl font-bold text-gray-900">Telephone</h3>
-                    </div>
+                  </div>
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
                       <p className="text-gray-600">+1-604-123-4567 (24 hours customer support)</p>
                     </div>
-                  </div>
+                </div>
 
-                  {/* Address Section */}
-                  <div className="space-y-4">
-                    <div className="flex items-center gap-2">
+                {/* Address Section */}
+                <div className="space-y-4">
+                  <div className="flex items-center gap-2">
                       <MapPin className="h-6 w-6 text-royalblue-600" />
                       <h3 className="text-xl font-bold text-gray-900">Address</h3>
                     </div>

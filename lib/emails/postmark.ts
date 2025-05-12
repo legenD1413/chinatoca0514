@@ -8,7 +8,7 @@ async function getPostmarkSettings() {
     if (!settings) {
       return {
         apiToken: "0addebb5-6e41-44b6-af05-7ec14d9e2852", // 默认值，应当在配置中修改
-        fromEmail: "no-reply@chinato.ca",
+        fromEmail: "no-reply@sinoprimeshipping.com",
         replyToEmail: null,
         messageStream: "outbound",
         enabled: true
@@ -19,7 +19,7 @@ async function getPostmarkSettings() {
     console.error("获取Postmark设置失败:", error);
     return {
       apiToken: "0addebb5-6e41-44b6-af05-7ec14d9e2852", // 默认值，应当在配置中修改
-      fromEmail: "no-reply@chinato.ca",
+      fromEmail: "no-reply@sinoprimeshipping.com",
       replyToEmail: null,
       messageStream: "outbound",
       enabled: true
@@ -75,7 +75,7 @@ export async function sendFormSubmissionEmail(
   
   // 准备邮件内容
   const emailSubject = subject || 
-    (formType === 'quote' ? '新的报价请求 - ChinaTo.ca' : '新的联系表单提交 - ChinaTo.ca');
+    (formType === 'quote' ? '新的报价请求 - SinoPrimeShipping' : '新的联系表单提交 - SinoPrimeShipping');
   
   // 创建HTML表格内容
   const tableRows = Object.entries(data).map(([key, value]) => {
@@ -113,14 +113,14 @@ export async function sendFormSubmissionEmail(
         
         <div class="footer">
           <p>此邮件由系统自动发送，请勿直接回复。</p>
-          <p>© ${new Date().getFullYear()} ChinaTo.ca. 保留所有权利。</p>
+          <p>© ${new Date().getFullYear()} SinoPrimeShipping. 保留所有权利。</p>
         </div>
       </body>
     </html>
   `;
 
   const textBody = `
-新的${formType === 'quote' ? '报价请求' : '联系表单提交'} - ChinaTo.ca
+新的${formType === 'quote' ? '报价请求' : '联系表单提交'} - SinoPrimeShipping
 
 您收到了一个新的${formType === 'quote' ? '报价请求' : '联系表单提交'}。详细信息如下：
 
@@ -129,7 +129,7 @@ ${Object.entries(data).map(([key, value]) => `${getFieldDisplayName(key)}: ${val
 提交时间: ${new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' })}
 
 此邮件由系统自动发送，请勿直接回复。
-© ${new Date().getFullYear()} ChinaTo.ca. 保留所有权利。
+© ${new Date().getFullYear()} SinoPrimeShipping. 保留所有权利。
   `;
 
   try {

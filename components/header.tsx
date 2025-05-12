@@ -28,10 +28,10 @@ export default function Header() {
     <header className="sticky top-0 z-50 w-full border-b border-gray-100 bg-white/80 backdrop-blur-md">
       <div className="container flex h-16 items-center justify-between px-4 md:px-6">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative w-[48px] h-[32px]">
-            <Image src="/ku-logo2.png" alt="ChinaTo.ca Logo" fill className="object-contain" />
+          <div className="relative w-[64px] h-[42px]">
+            <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
           </div>
-          <span className="text-xl font-semibold">ChinaTo.ca</span>
+          <span className="text-base font-semibold">SinoPrimeShipping</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -40,14 +40,14 @@ export default function Header() {
             <NavigationMenuList>
               <NavigationMenuItem>
                 <Link href="/how-it-works" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-base font-bold")}>
                     How it Works
                   </NavigationMenuLink>
                 </Link>
               </NavigationMenuItem>
 
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="text-sm font-medium">Services</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="text-base font-bold">Services</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <ul className="grid w-[600px] gap-4 p-6 md:w-[750px] md:grid-cols-2 lg:w-[900px]">
                     {services.map((service) => (
@@ -65,7 +65,7 @@ export default function Header() {
 
               <NavigationMenuItem>
                 <Link href="/price" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-base font-bold")}>
                     Pricing
                   </NavigationMenuLink>
                 </Link>
@@ -73,7 +73,7 @@ export default function Header() {
 
               <NavigationMenuItem>
                 <Link href="/about" legacyBehavior passHref>
-                  <NavigationMenuLink className={navigationMenuTriggerStyle()}>
+                  <NavigationMenuLink className={cn(navigationMenuTriggerStyle(), "text-base font-bold")}>
                     About Us
                   </NavigationMenuLink>
                 </Link>
@@ -94,10 +94,10 @@ export default function Header() {
             <SheetContent side="right" className="w-[300px] sm:w-[400px]">
               <nav className="flex flex-col gap-4">
                 <Link href="/" className="flex items-center gap-2 py-2" onClick={() => setIsOpen(false)}>
-                  <div className="relative w-[36px] h-[24px]">
-                    <Image src="/ku-logo2.png" alt="ChinaTo.ca Logo" fill className="object-contain" />
+                  <div className="relative w-[48px] h-[32px]">
+                    <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
                   </div>
-                  <span className="text-lg font-semibold">ChinaTo.ca</span>
+                  <span className="text-sm font-semibold">SinoPrimeShipping</span>
                 </Link>
                 <Link href="/how-it-works" className="py-2 text-lg font-medium" onClick={() => setIsOpen(false)}>
                   How it Works

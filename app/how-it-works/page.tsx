@@ -34,7 +34,7 @@ export default function HowItWorks() {
         <div className="container relative z-10 px-4 md:px-6">
           <div className="grid gap-8 md:grid-cols-2">
             <div className="flex flex-col justify-center space-y-6 text-white">
-              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">How ChinaTo.ca Works</h1>
+              <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">How SPS Works</h1>
               <p className="text-lg text-gray-300 md:text-xl">
                 Our goal is to make China-Canada logistics a stress-free process for you. Talk to our helpful shipping
                 advisors today to find out how you can optimize for time and cost, and start shipping within a week.
@@ -43,7 +43,7 @@ export default function HowItWorks() {
                 <Button size="lg" className="bg-royalblue-700 text-white hover:bg-royalblue-800">
                   Sign Up Free
                 </Button>
-                <Button size="lg" variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">
+                <Button size="lg" variant="outline" className="border-white bg-white text-royalblue-700 hover:bg-gray-100">     
                   Talk to Expert
                 </Button>
               </div>
@@ -92,7 +92,7 @@ export default function HowItWorks() {
               <h3 className="mt-[-30px] text-3xl font-bold">Set Up Your Account</h3>
               <div className="mt-6 space-y-4">
                 <p className="text-gray-600">
-                  Create your free ChinaTo.ca account in minutes. Our simple onboarding process helps us understand your
+                  Create your free SPS account in minutes. Our simple onboarding process helps us understand your
                   specific shipping needs from China to Canada.
                 </p>
                 <ul className="space-y-2">
@@ -116,7 +116,7 @@ export default function HowItWorks() {
             <div className="order-1 md:order-2">
               <div className="overflow-hidden rounded-lg border border-gray-200 shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/202505101616.jpg"
                   width={500}
                   height={300}
                   alt="Account Dashboard"
@@ -131,7 +131,7 @@ export default function HowItWorks() {
             <div>
               <div className="overflow-hidden rounded-lg border border-gray-200 shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/202505101621.jpg"
                   width={500}
                   height={300}
                   alt="Inventory Management"
@@ -220,7 +220,7 @@ export default function HowItWorks() {
             <div>
               <div className="overflow-hidden rounded-lg border border-gray-200 shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/202505101652.jpg"
                   width={500}
                   height={300}
                   alt="Shipping Process"
@@ -293,7 +293,7 @@ export default function HowItWorks() {
             <div className="order-1 md:order-2">
               <div className="overflow-hidden rounded-lg border border-gray-200 shadow-lg">
                 <Image
-                  src="/placeholder.svg?height=300&width=500"
+                  src="/202505101658.jpg"
                   width={500}
                   height={300}
                   alt="Analytics Dashboard"
@@ -538,7 +538,7 @@ export default function HowItWorks() {
             {[
               {
                 quote:
-                  "ChinaTo.ca transformed our supply chain. Their attention to detail and reliability have made our business more efficient and our customers happier.",
+                  "SPS transformed our supply chain. Their attention to detail and reliability have made our business more efficient and our customers happier.",
                 author: "Sarah Johnson",
                 company: "TechGadgets Inc.",
                 image: "/placeholder.svg?height=60&width=60",

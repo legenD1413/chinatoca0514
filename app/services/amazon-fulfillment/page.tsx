@@ -27,9 +27,9 @@ export default function AmazonFulfillment() {
               huge obstacle for many sellers.
             </p>
             <p className="mx-auto max-w-[800px] text-gray-600 md:text-lg">
-              ChinaTo.ca provides all the support you need for FBA Prep, including barcode labeling, packaging and
+              SinoPrimeShipping provides all the support you need for FBA Prep, including barcode labeling, packaging and
               repackaging, poly-bagging, and more. Your store could even double its sales opportunities by offering
-              Fulfillment by Merchant (FBM) with ChinaTo.ca
+              Fulfillment by Merchant (FBM) with SinoPrimeShipping
             </p>
             <div className="flex flex-col items-center justify-center gap-4 pt-4 sm:flex-row">
               <Button size="lg" className="bg-royalblue-700 text-white hover:bg-royalblue-800">
@@ -120,7 +120,7 @@ export default function AmazonFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/featured-fba.jpg"
                 width={600}
                 height={400}
                 alt="FBA Prep Services"
@@ -265,7 +265,7 @@ export default function AmazonFulfillment() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505091701.png"
                 width={600}
                 height={400}
                 alt="Amazon Seller Benefits"
@@ -275,7 +275,7 @@ export default function AmazonFulfillment() {
             <div className="flex flex-col justify-center space-y-4">
               <h2 className="text-3xl font-bold tracking-tighter">Benefits for Amazon Sellers</h2>
               <p className="max-w-[600px] text-gray-500 md:text-lg">
-                Partner with ChinaTo.ca for your Amazon fulfillment needs and experience these advantages:
+                Partner with SinoPrimeShipping for your Amazon fulfillment needs and experience these advantages:
               </p>
               <ul className="space-y-2">
                 {[
@@ -401,7 +401,7 @@ export default function AmazonFulfillment() {
                 Ready to Optimize Your Amazon Business?
               </h2>
               <p className="max-w-[700px] text-royalblue-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get started with ChinaTo.ca today and experience seamless Amazon fulfillment
+                Get started with SinoPrimeShipping today and experience seamless Amazon fulfillment
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">

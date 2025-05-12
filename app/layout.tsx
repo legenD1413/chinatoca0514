@@ -9,7 +9,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "ChinaTo.ca - Premium Logistics from China to Canada",
+  title: "SinoPrimeShipping - Premium Logistics from China to Canada",
   description:
     "Specialized logistics services for shipping from China to Canada, including crowdfunding, ecommerce, Amazon, and B2B fulfillment solutions.",
   icons: {

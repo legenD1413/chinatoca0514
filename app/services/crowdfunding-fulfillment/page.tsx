@@ -176,7 +176,7 @@ export default function CrowdfundingFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505101709.jpg"
                 width={600}
                 height={400}
                 alt="Crowdfunding Fulfillment Process"
@@ -192,7 +192,7 @@ export default function CrowdfundingFulfillment() {
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Why Choose ChinaTo.ca</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Why Choose SinoPrimeShipping</h2>
               <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Specialized solutions for crowdfunding creators shipping from China to Canada
               </p>
@@ -317,7 +317,7 @@ export default function CrowdfundingFulfillment() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/202505101716.jpg"
                 width={500}
                 height={400}
                 alt="TechGadget Case Study"
@@ -368,7 +368,7 @@ export default function CrowdfundingFulfillment() {
             {[
               {
                 quote:
-                  "ChinaTo.ca was instrumental in helping us deliver our product to backers on time. Their expertise in handling crowdfunding campaigns was evident at every step.",
+                  "SinoPrimeShipping was instrumental in helping us deliver our product to backers on time. Their expertise in handling crowdfunding campaigns was evident at every step.",
                 author: "Sarah Johnson",
                 company: "TechGadgets Inc.",
                 image: "/placeholder.svg?height=60&width=60",
@@ -466,7 +466,7 @@ export default function CrowdfundingFulfillment() {
                 Ready to Fulfill Your Campaign?
               </h2>
               <p className="max-w-[700px] text-royalblue-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get started with ChinaTo.ca today and experience seamless crowdfunding fulfillment
+                Get started with SinoPrimeShipping today and experience seamless crowdfunding fulfillment
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">

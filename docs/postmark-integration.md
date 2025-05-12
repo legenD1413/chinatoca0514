@@ -1,6 +1,6 @@
 # Postmark 邮件服务集成
 
-本文档介绍了ChinaTo.ca网站中Postmark邮件服务的集成和配置方法。
+本文档介绍了SinoPrimeShipping网站中Postmark邮件服务的集成和配置方法。
 
 ## 功能概述
 
@@ -139,5 +139,5 @@ Postmark集成用于以下功能：
 
 如果遇到无法解决的问题，请联系技术支持：
 
-- 电子邮件：support@chinato.ca
+- 电子邮件：support@sinoprimeshipping.com
 - 在管理员界面中提交错误报告 

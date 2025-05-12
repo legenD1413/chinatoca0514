@@ -23,7 +23,7 @@ export default function EcommerceFulfillment() {
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">Ecommerce Fulfillment</h1>
               <p className="text-lg text-gray-600 md:text-xl">
                 E-Commerce fulfillment is the process of receiving, processing, packaging, and delivering online orders
-                to customers. With ChinaTo.ca, DTC brands benefit from a trusted partner that supports their expansion
+                to customers. With SinoPrimeShipping, DTC brands benefit from a trusted partner that supports their expansion
                 into new markets and focuses on growth.
               </p>
               <p className="text-lg text-gray-600">Our comprehensive services include:</p>
@@ -59,13 +59,6 @@ export default function EcommerceFulfillment() {
                 {/* Platform Integrations */}
                 <div className="grid h-full w-full place-items-center rounded-lg bg-white p-8">
                   <div className="relative h-full w-full">
-                    {/* Center logo */}
-                    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-                      <div className="flex h-20 w-20 items-center justify-center rounded-full bg-royalblue-600">
-                        <Image src="/logo.png" width={40} height={40} alt="ChinaTo.ca Logo" className="h-10 w-10" />
-                      </div>
-                    </div>
-
                     {/* Platform logos in a circle around the center */}
                     <div className="absolute left-1/4 top-1/4 -translate-x-1/2 -translate-y-1/2">
                       <div className="flex h-16 w-16 items-center justify-center rounded-full bg-green-600">
@@ -134,7 +127,7 @@ export default function EcommerceFulfillment() {
               </h2>
               <p className="max-w-[600px] text-gray-500 md:text-lg">
                 Every e-commerce brand's best ally is a reliable fulfillment strategy that aligns with customer
-                expectations. At ChinaTo.ca, we ensure:
+                expectations. At SinoPrimeShipping, we ensure:
               </p>
               <ul className="space-y-2">
                 {[
@@ -158,7 +151,7 @@ export default function EcommerceFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505101721.jpg"
                 width={600}
                 height={400}
                 alt="Ecommerce Fulfillment Warehouse"
@@ -246,7 +239,7 @@ export default function EcommerceFulfillment() {
           <div className="grid gap-12 md:grid-cols-2">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505101737.jpg"
                 width={600}
                 height={400}
                 alt="Ecommerce Integrations"
@@ -358,7 +351,7 @@ export default function EcommerceFulfillment() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/202505101744.jpg"
                 width={500}
                 height={400}
                 alt="GadgetWorld Case Study"
@@ -384,7 +377,7 @@ export default function EcommerceFulfillment() {
             {[
               {
                 quote:
-                  "ChinaTo.ca has transformed our ecommerce operations. Their efficient fulfillment process has allowed us to scale rapidly while maintaining customer satisfaction.",
+                  "SinoPrimeShipping has transformed our ecommerce operations. Their efficient fulfillment process has allowed us to scale rapidly while maintaining customer satisfaction.",
                 author: "Jennifer Lee",
                 company: "TechAccessories.com",
                 image: "/placeholder.svg?height=60&width=60",
@@ -398,7 +391,7 @@ export default function EcommerceFulfillment() {
               },
               {
                 quote:
-                  "As we expanded into the Canadian market, ChinaTo.ca's expertise in customs and international shipping was invaluable. They've become an essential part of our business.",
+                  "As we expanded into the Canadian market, SinoPrimeShipping's expertise in customs and international shipping was invaluable. They've become an essential part of our business.",
                 author: "Sarah Johnson",
                 company: "HomeGoods Direct",
                 image: "/placeholder.svg?height=60&width=60",
@@ -482,7 +475,7 @@ export default function EcommerceFulfillment() {
                 Ready to Scale Your Ecommerce Business?
               </h2>
               <p className="max-w-[700px] text-royalblue-100 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Get started with ChinaTo.ca today and experience seamless ecommerce fulfillment
+                Get started with SinoPrimeShipping today and experience seamless ecommerce fulfillment
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">

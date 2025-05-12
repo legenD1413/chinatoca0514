@@ -10,9 +10,9 @@ export default function Footer() {
           <div className="space-y-4">
             <Link href="/" className="flex items-center gap-2">
               <div className="relative w-[48px] h-[32px]">
-                <Image src="/ku-logo2.png" alt="ChinaTo.ca Logo" fill className="object-contain" />
+                <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
               </div>
-              <span className="text-xl font-semibold">ChinaTo.ca</span>
+              <span className="text-xl font-semibold">SinoPrimeShipping</span>
             </Link>
             <p className="text-sm text-gray-500">
               Premium logistics solutions for shipping from China to Canada. Reliable, efficient, and cost-effective.
@@ -68,7 +68,15 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600">123 Logistics Way, Vancouver, BC, Canada</span>
+                <span className="text-sm text-gray-600"><strong>Toronto:</strong> 245 Walker Dr Brampton ON L6T 4H2</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-red-700" />
+                <span className="text-sm text-gray-600"><strong>Vancouver:</strong> 340-3771 Jacombs Road Richmond BC V6V2L9</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <MapPin className="h-5 w-5 text-red-700" />
+                <span className="text-sm text-gray-600"><strong>Calgary:</strong> 7405 108 Avenue Southeast Calgary, AB T2C 5C8</span>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-5 w-5 text-red-700" />
@@ -76,7 +84,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600">info@chinato.ca</span>
+                <span className="text-sm text-gray-600">info@sinoprimeshipping.com</span>
               </li>
             </ul>
           </div>
@@ -84,7 +92,7 @@ export default function Footer() {
 
         <div className="mt-12 border-t border-gray-100 pt-8">
           <p className="text-center text-xs text-gray-500">
-            © {new Date().getFullYear()} ChinaTo.ca. All rights reserved.
+            © {new Date().getFullYear()} SinoPrimeShipping. All rights reserved.
           </p>
         </div>
       </div>

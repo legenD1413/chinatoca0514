@@ -11,13 +11,13 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About ChinaTo.ca</h1>
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">About SPS</h1>
                 <p className="text-gray-500 md:text-xl">
                   Your trusted partner for logistics solutions from China to Canada
                 </p>
               </div>
               <p className="text-gray-500">
-                Founded in 2015, ChinaTo.ca has grown to become a leading logistics provider specializing in shipping
+                Founded in 2015, SPS has grown to become a leading logistics provider specializing in shipping
                 from China to Canada. With offices in both countries, we bridge the gap between manufacturers and
                 businesses, providing seamless logistics solutions.
               </p>
@@ -33,7 +33,7 @@ export default function AboutPage() {
                 src="/placeholder.svg?height=400&width=600"
                 width={600}
                 height={400}
-                alt="ChinaTo.ca Team"
+                alt="SPS Team"
                 className="rounded-lg object-cover"
               />
             </div>
@@ -111,7 +111,7 @@ export default function AboutPage() {
               {
                 name: "David Chen",
                 title: "Founder & CEO",
-                bio: "With over 15 years of experience in international logistics, David founded ChinaTo.ca to bridge the gap between Chinese manufacturers and Canadian businesses.",
+                bio: "With over 15 years of experience in international logistics, David founded SPS to bridge the gap between Chinese manufacturers and Canadian businesses.",
                 image: "/placeholder.svg?height=300&width=300",
               },
               {
@@ -181,14 +181,14 @@ export default function AboutPage() {
                 location: "Vancouver, Canada",
                 address: "123 Logistics Way, Vancouver, BC, V6B 1A9",
                 phone: "+1 (604) 123-4567",
-                email: "vancouver@chinato.ca",
+                email: "vancouver@sps",
                 image: "/placeholder.svg?height=300&width=500",
               },
               {
                 location: "Shenzhen, China",
                 address: "Building 3, Technology Park, Nanshan District, Shenzhen, Guangdong",
                 phone: "+86 755 1234 5678",
-                email: "shenzhen@chinato.ca",
+                email: "shenzhen@sps",
                 image: "/placeholder.svg?height=300&width=500",
               },
             ].map((office, index) => (
@@ -238,7 +238,7 @@ export default function AboutPage() {
             {[
               {
                 quote:
-                  "ChinaTo.ca has been instrumental in our growth. Their reliable shipping solutions have allowed us to scale our ecommerce business with confidence.",
+                  "SPS has been instrumental in our growth. Their reliable shipping solutions have allowed us to scale our ecommerce business with confidence.",
                 author: "Mark Thompson",
                 company: "Canadian Imports Ltd.",
               },
