@@ -19,10 +19,10 @@ async function checkDatabaseHealth() {
 // 尝试创建PostmarkSetting表（如果不存在）
 async function ensurePostmarkTable() {
   try {
-    // 检查表是否存在
+    // 检查表是否存在 - 使用PostgreSQL兼容的语法
     const tables = await prisma.$queryRaw`
-      SELECT name FROM sqlite_master 
-      WHERE type='table' AND name='PostmarkSetting'
+      SELECT table_name as name FROM information_schema.tables 
+      WHERE table_schema = 'public' AND table_name = 'PostmarkSetting'
     `;
     
     const tableExists = Array.isArray(tables) && tables.length > 0;
@@ -31,79 +31,45 @@ async function ensurePostmarkTable() {
       console.log('PostmarkSetting表不存在，尝试创建...');
       
       try {
-        // 使用更详细的错误处理和日志记录
-        // 直接执行SQL创建表
-        await prisma.$executeRaw`
-          CREATE TABLE IF NOT EXISTS "PostmarkSetting" (
-            "id" INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
-            "apiToken" TEXT NOT NULL,
-            "fromEmail" TEXT NOT NULL,
-            "replyToEmail" TEXT,
-            "messageStream" TEXT NOT NULL DEFAULT 'outbound',
-            "enabled" BOOLEAN NOT NULL DEFAULT true,
-            "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
-            "updatedAt" DATETIME NOT NULL
-          );
-        `;
-        
-        // 创建后再次检查表是否存在
-        const checkAgain = await prisma.$queryRaw`
-          SELECT name FROM sqlite_master 
-          WHERE type='table' AND name='PostmarkSetting'
-        `;
-        
-        const tableCreated = Array.isArray(checkAgain) && checkAgain.length > 0;
-        
-        if (tableCreated) {
-          console.log('PostmarkSetting表创建成功');
-          return { success: true, created: true };
-        } else {
-          console.error('尝试创建PostmarkSetting表后，表仍不存在');
+        // 使用Prisma模型操作创建表
+        console.log('尝试使用Prisma模型创建PostmarkSetting表...');
+        try {
+          // 使用Prisma的create强制创建表
+          await prisma.postmarkSetting.create({
+            data: {
+              apiToken: "0addebb5-6e41-44b6-af05-7ec14d9e2852",
+              fromEmail: "no-reply@chinato.ca",
+              messageStream: "outbound",
+              enabled: true,
+              updatedAt: new Date()
+            }
+          });
+          
+          // 删除刚创建的记录，保持表为空
+          const setting = await prisma.postmarkSetting.findFirst();
+          if (setting) {
+            await prisma.postmarkSetting.delete({
+              where: {
+                id: setting.id
+              }
+            });
+          }
+          
+          console.log('成功创建PostmarkSetting表');
+          return { success: true, created: true, method: 'prisma' };
+        } catch (backupError) {
+          console.error("创建表失败:", backupError);
           return { 
             success: false, 
-            error: "表创建失败，创建后无法验证表是否存在" 
+            error: String(backupError)
           };
         }
       } catch (createError) {
         console.error("创建PostmarkSetting表出错:", createError);
-        
-        // 尝试备用方法 - 使用Prisma模型操作创建
-        try {
-          console.log('尝试使用备用方法创建PostmarkSetting表...');
-          // 使用Prisma的createMany强制创建表
-          await prisma.$transaction(async (tx) => {
-            // 先尝试创建一个记录来强制表的创建
-            await tx.postmarkSetting.create({
-              data: {
-                apiToken: "0addebb5-6e41-44b6-af05-7ec14d9e2852",
-                fromEmail: "no-reply@chinato.ca",
-                messageStream: "outbound",
-                enabled: true,
-                updatedAt: new Date()
-              }
-            });
-            
-            // 删除刚创建的记录，保持表为空
-            const setting = await tx.postmarkSetting.findFirst();
-            if (setting) {
-              await tx.postmarkSetting.delete({
-                where: {
-                  id: setting.id
-                }
-              });
-            }
-          });
-          
-          console.log('备用方法创建PostmarkSetting表成功');
-          return { success: true, created: true, method: 'backup' };
-        } catch (backupError) {
-          console.error("备用方法创建失败:", backupError);
-          return { 
-            success: false, 
-            error: String(createError),
-            backupError: String(backupError)
-          };
-        }
+        return { 
+          success: false, 
+          error: String(createError)
+        };
       }
     }
     

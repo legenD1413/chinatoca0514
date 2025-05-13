@@ -62,8 +62,8 @@ export async function GET() {
     let models = [];
     try {
       models = await debugPrisma.$queryRaw<{name: string}[]>`
-        SELECT name FROM sqlite_master 
-        WHERE type='table' AND name NOT LIKE 'sqlite_%' AND name NOT LIKE '_prisma_%'
+        SELECT table_name as name FROM information_schema.tables 
+        WHERE table_schema = 'public'
       `;
       console.log('查询数据库表成功');
     } catch (queryError) {
@@ -89,8 +89,8 @@ export async function GET() {
     let postmarkTable = [];
     try {
       postmarkTable = await debugPrisma.$queryRaw<{name: string}[]>`
-        SELECT name FROM sqlite_master 
-        WHERE type='table' AND name='PostmarkSetting'
+        SELECT table_name as name FROM information_schema.tables 
+        WHERE table_schema = 'public' AND table_name = 'PostmarkSetting'
       `;
       console.log('查询PostmarkSetting表成功');
     } catch (tableError) {
@@ -115,7 +115,15 @@ export async function GET() {
     let columns: any[] = [];
     if (hasPostmarkTable) {
       try {
-        const rawColumns = await debugPrisma.$queryRaw<any[]>`PRAGMA table_info(PostmarkSetting)`;
+        const rawColumns = await debugPrisma.$queryRaw<any[]>`
+          SELECT 
+            column_name as name,
+            data_type as type,
+            is_nullable,
+            column_default as dflt_value
+          FROM information_schema.columns
+          WHERE table_schema = 'public' AND table_name = 'PostmarkSetting'
+        `;
         columns = sanitizeDataForJSON(rawColumns);
         console.log('获取PostmarkSetting表结构成功');
       } catch (columnsError) {
