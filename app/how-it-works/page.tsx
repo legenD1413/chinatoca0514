@@ -24,7 +24,7 @@ export default function HowItWorks() {
       <section className="relative bg-gray-800 py-20 md:py-32">
         <div className="absolute inset-0 z-0">
           <Image
-            src="/placeholder.svg?height=800&width=1600"
+            src="/202505121834.png"
             alt="Logistics Warehouse"
             fill
             className="object-cover opacity-40"
@@ -49,19 +49,7 @@ export default function HowItWorks() {
               </div>
             </div>
             <div className="relative flex items-center justify-center">
-              <div className="relative h-[300px] w-full overflow-hidden rounded-lg md:h-[350px]">
-                <Image
-                  src="/placeholder.svg?height=350&width=600"
-                  fill
-                  alt="Logistics Process Illustration"
-                  className="object-contain"
-                />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <button className="flex h-16 w-16 items-center justify-center rounded-full bg-white/20 text-white backdrop-blur-sm transition-all hover:bg-white/30">
-                    <Play className="h-8 w-8 fill-current" />
-                  </button>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -447,7 +435,6 @@ export default function HowItWorks() {
                 <h3 className="text-xl font-bold">{service.title}</h3>
                 <p className="mt-2 text-gray-500">{service.description}</p>
                 {service.price && <div className="mt-4 text-lg font-bold text-royalblue-700">{service.price}</div>}
-                <Button className="mt-4 w-full bg-royalblue-700 hover:bg-royalblue-800">Learn More</Button>
               </div>
             ))}
           </div>
@@ -561,17 +548,7 @@ export default function HowItWorks() {
               <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                 <p className="mb-4 text-gray-600">"{testimonial.quote}"</p>
                 <div className="flex items-center">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    width={60}
-                    height={60}
-                    alt={testimonial.author}
-                    className="mr-4 rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-royalblue-600">{testimonial.company}</p>
-                  </div>
+                  <p className="font-semibold">{testimonial.author}</p>
                 </div>
               </div>
             ))}

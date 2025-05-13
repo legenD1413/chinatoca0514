@@ -12,10 +12,10 @@ export default function Footer() {
               <div className="relative w-[48px] h-[32px]">
                 <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
               </div>
-              <span className="text-xl font-semibold">SinoPrimeShipping</span>
+             
             </Link>
             <p className="text-sm text-gray-500">
-              Premium logistics solutions for shipping from China to Canada. Reliable, efficient, and cost-effective.
+            SinoPrimeShipping logistics solutions for shipping from China to Canada. Reliable, efficient, and cost-effective.
             </p>
           </div>
 
@@ -27,12 +27,7 @@ export default function Footer() {
                 { name: "Ecommerce Fulfillment", href: "/services/ecommerce-fulfillment" },
                 { name: "Amazon Fulfillment", href: "/services/amazon-fulfillment" },
                 { name: "B2B Fulfillment", href: "/services/b2b-fulfillment" },
-                { name: "Subscription Box Fulfillment", href: "/services/subscription-box-fulfillment" },
                 { name: "Pick & Pack", href: "/services/pick-and-pack" },
-                { name: "Kitting and Assembly", href: "/services/kitting-and-assembly" },
-                { name: "Labeling Service", href: "/services/labeling-service" },
-                { name: "Inventory Management", href: "/services/inventory-management" },
-                { name: "Dropshipping Fulfillment", href: "/services/dropshipping-fulfillment" },
               ].map((service) => (
                 <li key={service.name}>
                   <Link href={service.href} className="text-sm text-gray-600 hover:text-blue-700">
@@ -51,8 +46,6 @@ export default function Footer() {
                 { name: "Pricing", href: "/price" },
                 { name: "About Us", href: "/about" },
                 { name: "Contact Us", href: "/contact" },
-                { name: "Blog", href: "/blog" },
-                { name: "Referral Program", href: "/referral-program" },
               ].map((item) => (
                 <li key={item.name}>
                   <Link href={item.href} className="text-sm text-gray-600 hover:text-blue-700">
@@ -68,23 +61,13 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600"><strong>Toronto:</strong> 245 Walker Dr Brampton ON L6T 4H2</span>
+                <Link href="/about#locations" className="text-sm text-gray-600 hover:text-blue-700">Our Locations</Link>
               </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600"><strong>Vancouver:</strong> 340-3771 Jacombs Road Richmond BC V6V2L9</span>
-              </li>
-              <li className="flex items-start gap-3">
-                <MapPin className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600"><strong>Calgary:</strong> 7405 108 Avenue Southeast Calgary, AB T2C 5C8</span>
-              </li>
-              <li className="flex items-center gap-3">
-                <Phone className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600">+1 (604) 123-4567</span>
-              </li>
+            
+
               <li className="flex items-center gap-3">
                 <Mail className="h-5 w-5 text-red-700" />
-                <span className="text-sm text-gray-600">info@sinoprimeshipping.com</span>
+                <span className="text-sm text-gray-600">info@SinoPrimeshipping.com</span>
               </li>
             </ul>
           </div>

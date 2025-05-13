@@ -195,30 +195,14 @@ export default function ContactPage() {
                   <div className="space-y-2">
                       <div className="flex items-center gap-2">
                         <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
-                        <p className="text-gray-600">Sales: sales@chinato.ca</p>
+                        <p className="text-gray-600">Sales: sales@SinoPrimeShipping.com</p>
                       </div>
-                      <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
-                        <p className="text-gray-600">Support: support@chinato.ca</p>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
-                        <p className="text-gray-600">Info: info@chinato.ca</p>
-                      </div>
+                      
+                    
                   </div>
                 </div>
 
-                {/* Telephone Section */}
-                <div className="space-y-4">
-                  <div className="flex items-center gap-2">
-                      <Phone className="h-6 w-6 text-royalblue-600" />
-                      <h3 className="text-xl font-bold text-gray-900">Telephone</h3>
-                  </div>
-                    <div className="flex items-center gap-2">
-                      <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
-                      <p className="text-gray-600">+1-604-123-4567 (24 hours customer support)</p>
-                    </div>
-                </div>
+             
 
                 {/* Address Section */}
                 <div className="space-y-4">
@@ -229,9 +213,9 @@ export default function ContactPage() {
                     <div className="flex items-center gap-2">
                       <div className="h-2 w-2 rounded-full bg-royalblue-600"></div>
                       <p className="text-gray-600">
-                        ChinaTo.ca, 123 Logistics Way,<br />
-                        Vancouver, BC, V6B 1A9,<br />
-                        Canada
+                      Toronto:245 Walker Dr Brampton ON L6T 4H2,Canada<br />
+                        
+                        
                       </p>
                     </div>
                   </div>
@@ -244,22 +228,12 @@ export default function ContactPage() {
                   <Quote className="h-10 w-10" />
                 </div>
                 <p className="mb-6 text-gray-700">
-                  ChinaTo.ca has been the best solution for my business. Their customer service team is incredibly responsive
+                  SPS has been the best solution for my business. Their customer service team is incredibly responsive
                   and helpful. I highly recommend their services to anyone looking for reliable logistics solutions.
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 overflow-hidden rounded-full">
-                    <Image
-                      src="/placeholder.svg?height=48&width=48"
-                      alt="Customer"
-                      width={48}
-                      height={48}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
                   <div>
                     <p className="font-semibold">Sarah Johnson</p>
-                    <p className="text-sm text-gray-500">Founder @ TechGadgets Inc.</p>
                   </div>
                 </div>
               </div>
@@ -272,56 +246,79 @@ export default function ContactPage() {
       <section className="bg-white py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter">Our Offices</h2>
-            <p className="mx-auto max-w-[700px] text-gray-500 md:text-lg">
-              Visit us at our locations in Canada and China
-            </p>
+          
           </div>
 
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
-            {[
-              {
-                location: "Vancouver, Canada",
-                address: "123 Logistics Way, Vancouver, BC, V6B 1A9",
-                phone: "+1 (604) 123-4567",
-                email: "vancouver@chinato.ca",
-                image: "/vancouver-skyline.png",
-              },
-              {
-                location: "Shenzhen, China",
-                address: "Building 3, Technology Park, Nanshan District, Shenzhen, Guangdong",
-                phone: "+86 755 1234 5678",
-                email: "shenzhen@chinato.ca",
-                image: "/placeholder.svg?key=0bami",
-              },
-            ].map((office, index) => (
-              <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-                <div className="mb-4 overflow-hidden rounded-lg">
-                  <Image
-                    src={office.image || "/placeholder.svg"}
-                    width={500}
-                    height={300}
-                    alt={office.location}
-                    className="h-[200px] w-full object-cover"
-                  />
+          {/* 中国地址 */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-bold mb-8 text-center text-royalblue-800">Our Office&Warehouse</h3>
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+              {[
+                {
+                  location: "ShenZhen",
+                  address: "Unit 102, 1st Floor, Building 10, Yilisheng, Tangwei, Fuyong, Shenzhen, China",
+                },
+                {
+                  location: "ShangHai",
+                  address: "No. 538, Longgao Road, Jiuting Town, Songjiang District, Shanghai, China",
+                },
+                {
+                  location: "YiWu",
+                  address: "No. 101, Qiushi Road, Yiwu City, Jinhua City, Zhejiang Province, China",
+                },
+              ].map((office, index) => (
+                <div 
+                  key={index} 
+                  className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm h-full transition-all duration-300 hover:shadow-lg hover:border-royalblue-200 hover:translate-y-[-4px]"
+                >
+                  <h3 className="text-2xl font-bold text-royalblue-800 mb-2">{office.location}</h3>
+                  <ul className="mt-6 space-y-5">
+                    <li className="flex items-start gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-700 leading-relaxed">{office.address}</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="mb-2 text-xl font-bold">{office.location}</h3>
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-3">
-                    <MapPin className="mt-1 h-5 w-5 flex-shrink-0 text-burgundy-700" />
-                    <span className="text-gray-600">{office.address}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-burgundy-700" />
-                    <span className="text-gray-600">{office.phone}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-burgundy-700" />
-                    <span className="text-gray-600">{office.email}</span>
-                  </li>
-                </ul>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* 加拿大地址 */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold mb-8 text-center text-royalblue-800">Canada Offices&warehouse</h3>
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+              {[
+                {
+                  location: "Toronto",
+                  address: "245 Walker Dr Brampton ON L6T 4H2",
+                },
+                {
+                  location: "Vancouver",
+                  address: "340-3771 Jacombs Road Richmond BC V6V2L9",
+                },
+                {
+                  location: "Calgary",
+                  address: "7405 108 Avenue Southeast Calgary, AB T2C 5C8",
+                },
+              ].map((office, index) => (
+                <div 
+                  key={index} 
+                  className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm h-full transition-all duration-300 hover:shadow-lg hover:border-royalblue-200 hover:translate-y-[-4px]"
+                >
+                  <h3 className="text-2xl font-bold text-royalblue-800 mb-2">{office.location}</h3>
+                  <ul className="mt-6 space-y-5">
+                    <li className="flex items-start gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-700 leading-relaxed">{office.address}</span>
+                    </li>
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -346,7 +343,7 @@ export default function ContactPage() {
               {
                 question: "Do you offer in-person consultations?",
                 answer:
-                  "Yes, we offer in-person consultations at our Vancouver and Shenzhen offices. Please contact us to schedule an appointment with one of our logistics experts.",
+                  "Yes, we offer in-person consultations at our Toronto and Shenzhen offices. Please contact us to schedule an appointment with one of our logistics experts.",
               },
               {
                 question: "How can I track my existing shipment?",

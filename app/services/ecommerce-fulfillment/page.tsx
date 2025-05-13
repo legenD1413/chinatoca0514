@@ -400,17 +400,7 @@ export default function EcommerceFulfillment() {
               <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                 <p className="mb-4 text-gray-600">"{testimonial.quote}"</p>
                 <div className="flex items-center">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    width={60}
-                    height={60}
-                    alt={testimonial.author}
-                    className="mr-4 rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-royalblue-600">{testimonial.company}</p>
-                  </div>
+                  <p className="font-semibold">{testimonial.author}</p>
                 </div>
               </div>
             ))}
@@ -481,9 +471,6 @@ export default function EcommerceFulfillment() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="bg-white text-royalblue-800 hover:bg-gray-100">
                 Get a Free Quote
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-700">
-                Talk to an Expert
               </Button>
             </div>
           </div>

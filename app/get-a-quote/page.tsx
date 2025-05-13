@@ -272,24 +272,12 @@ export default function GetAQuotePage() {
                   <Quote className="h-10 w-10" />
                 </div>
                 <p className="mb-6 text-gray-700">
-                  ChinaTo.ca has been the best solution for my business to ship internationally. They are extremely
+                  SPS has been the best solution for my business to ship internationally. They are extremely
                   organized, have amazing customer service, and are extremely quick to get your orders shipped out.
                   Highly recommend to try them for your business.
                 </p>
                 <div className="flex items-center gap-4">
-                  <div className="h-12 w-12 overflow-hidden rounded-full">
-                    <Image
-                      src="/placeholder.svg?height=48&width=48"
-                      alt="Customer"
-                      width={48}
-                      height={48}
-                      className="h-full w-full object-cover"
-                    />
-                  </div>
-                  <div>
-                    <p className="font-semibold">Sarah Johnson</p>
-                    <p className="text-sm text-gray-500">Founder @ TechGadgets Inc.</p>
-                  </div>
+                  <p className="font-semibold">Sarah Johnson</p>
                 </div>
               </div>
             </div>
@@ -301,7 +289,7 @@ export default function GetAQuotePage() {
       <section className="bg-white py-16">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <h2 className="text-3xl font-bold tracking-tighter">Why Choose ChinaTo.ca?</h2>
+            <h2 className="text-3xl font-bold tracking-tighter">Why Choose SPS?</h2>
             <p className="mx-auto max-w-[700px] text-gray-500 md:text-lg">
               We provide comprehensive logistics solutions tailored to your specific needs
             </p>

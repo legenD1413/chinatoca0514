@@ -305,17 +305,7 @@ export default function Home() {
               <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                 <p className="mb-4 text-gray-700">{testimonial.quote}</p>
                 <div className="flex items-center">
-                  <Image
-                    src={testimonial.image || "/api/placeholder?width=60&height=60"}
-                    width={60}
-                    height={60}
-                    alt={testimonial.author}
-                    className="mr-4 rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-blue-600">{testimonial.company}</p>
-                  </div>
+                  <p className="font-semibold">{testimonial.author}</p>
                 </div>
               </div>
             ))}

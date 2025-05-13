@@ -30,7 +30,7 @@ export default function AboutPage() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/202505131546.jpg"
                 width={600}
                 height={400}
                 alt="SPS Team"
@@ -95,130 +95,106 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Team Section */}
-      <section className="bg-white py-20">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Leadership Team</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Meet the experts behind our logistics solutions
-              </p>
-            </div>
-          </div>
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {[
-              {
-                name: "David Chen",
-                title: "Founder & CEO",
-                bio: "With over 15 years of experience in international logistics, David founded SPS to bridge the gap between Chinese manufacturers and Canadian businesses.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Sarah Johnson",
-                title: "Operations Director",
-                bio: "Sarah oversees all logistics operations, ensuring smooth processes from pickup in China to final delivery in Canada.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Michael Zhang",
-                title: "China Operations Manager",
-                bio: "Based in our Shenzhen office, Michael manages our team in China and coordinates with manufacturers and freight forwarders.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Emily Wilson",
-                title: "Customer Success Manager",
-                bio: "Emily ensures our clients receive exceptional service and support throughout their shipping journey.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Robert Li",
-                title: "Customs Compliance Specialist",
-                bio: "Robert's expertise in international trade regulations ensures smooth customs clearance for all shipments.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-              {
-                name: "Jennifer Wong",
-                title: "Business Development Manager",
-                bio: "Jennifer works with new clients to understand their needs and develop tailored logistics solutions.",
-                image: "/placeholder.svg?height=300&width=300",
-              },
-            ].map((member, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="mb-4 overflow-hidden rounded-full">
-                  <Image
-                    src={member.image || "/placeholder.svg"}
-                    width={150}
-                    height={150}
-                    alt={member.name}
-                    className="h-[150px] w-[150px] object-cover"
-                  />
-                </div>
-                <h3 className="text-xl font-bold">{member.name}</h3>
-                <p className="text-sm text-royalblue-600">{member.title}</p>
-                <p className="mt-2 text-gray-500">{member.bio}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Our Locations */}
-      <section className="bg-gray-50 py-20">
+      <section className="bg-gray-50 py-24">
         <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">Our Locations</h2>
-              <p className="max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Strategically located offices to serve you better
+          <div className="flex flex-col items-center justify-center space-y-6 text-center">
+            <div className="space-y-3">
+              <h2 className="text-4xl font-bold tracking-tight sm:text-5xl text-gray-900">Our Locations</h2>
+              <p className="max-w-[800px] text-gray-600 md:text-xl/relaxed lg:text-xl/relaxed">
+                Strategically located Warehouse to serve you better
               </p>
             </div>
           </div>
-          <div className="mx-auto mt-12 grid max-w-5xl gap-8 md:grid-cols-2">
-            {[
-              {
-                location: "Vancouver, Canada",
-                address: "123 Logistics Way, Vancouver, BC, V6B 1A9",
-                phone: "+1 (604) 123-4567",
-                email: "vancouver@sps",
-                image: "/placeholder.svg?height=300&width=500",
-              },
-              {
-                location: "Shenzhen, China",
-                address: "Building 3, Technology Park, Nanshan District, Shenzhen, Guangdong",
-                phone: "+86 755 1234 5678",
-                email: "shenzhen@sps",
-                image: "/placeholder.svg?height=300&width=500",
-              },
-            ].map((office, index) => (
-              <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
-                <div className="mb-4">
-                  <Image
-                    src={office.image || "/placeholder.svg"}
-                    width={500}
-                    height={300}
-                    alt={office.location}
-                    className="rounded-lg object-cover"
-                  />
+          
+          {/* 中国地址 */}
+          <div className="mt-16">
+            <h3 className="text-2xl font-bold mb-10 text-center text-royalblue-800">China Warehouse</h3>
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+              {[
+                {
+                  location: "ShenZhen",
+                  address: "Unit 102, 1st Floor, Building 10, Yilisheng, Tangwei, Fuyong, Shenzhen, China",
+                  email: "SZX@SinoPrimeshipping.com",
+                },
+                {
+                  location: "ShangHai",
+                  address: "No. 538, Longgao Road, Jiuting Town, Songjiang District, Shanghai, China",
+                  email: "SHA@SinoPrimeshipping.com",
+                },
+                {
+                  location: "YiWu",
+                  address: "No. 101, Qiushi Road, Yiwu City, Jinhua City, Zhejiang Province, China",
+                  email: "YIW@SinoPrimeshipping.com",
+                },
+              ].map((office, index) => (
+                <div 
+                  key={index} 
+                  className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm h-full transition-all duration-300 hover:shadow-lg hover:border-royalblue-200 hover:translate-y-[-4px]"
+                >
+                  <h3 className="text-2xl font-bold text-royalblue-800 mb-2">{office.location}</h3>
+                  <ul className="mt-6 space-y-5">
+                    <li className="flex items-start gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-700 leading-relaxed">{office.address}</span>
+                    </li>
+                    <li className="flex items-center gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <Mail className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-600 text-sm font-medium">{office.email}</span>
+                    </li>
+                  </ul>
                 </div>
-                <h3 className="text-xl font-bold">{office.location}</h3>
-                <ul className="mt-4 space-y-3">
-                  <li className="flex items-start gap-3">
-                    <MapPin className="h-5 w-5 text-burgundy-700" />
-                    <span className="text-gray-600">{office.address}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Phone className="h-5 w-5 text-burgundy-700" />
-                    <span className="text-gray-600">{office.phone}</span>
-                  </li>
-                  <li className="flex items-center gap-3">
-                    <Mail className="h-5 w-5 text-burgundy-700" />
-                    <span className="text-gray-600">{office.email}</span>
-                  </li>
-                </ul>
-              </div>
-            ))}
+              ))}
+            </div>
+          </div>
+
+          {/* 加拿大地址 */}
+          <div className="mt-20">
+            <h3 className="text-2xl font-bold mb-10 text-center text-royalblue-800">Canada Warehouse</h3>
+            <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
+              {[
+                {
+                  location: "Toronto",
+                  address: "245 Walker Dr Brampton ON L6T 4H2",
+                  email: "YYZ@SinoPrimeshipping.com",
+                },
+                {
+                  location: "Vancouver",
+                  address: "340-3771 Jacombs Road Richmond BC V6V2L9",
+                  email: "YVR@SinoPrimeshipping.com",
+                },
+                {
+                  location: "Calgary",
+                  address: "7405 108 Avenue Southeast Calgary, AB T2C 5C8",
+                  email: "YYC@SinoPrimeshipping.com",
+                },
+              ].map((office, index) => (
+                <div 
+                  key={index} 
+                  className="rounded-xl border border-gray-200 bg-white p-8 shadow-sm h-full transition-all duration-300 hover:shadow-lg hover:border-royalblue-200 hover:translate-y-[-4px]"
+                >
+                  <h3 className="text-2xl font-bold text-royalblue-800 mb-2">{office.location}</h3>
+                  <ul className="mt-6 space-y-5">
+                    <li className="flex items-start gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <MapPin className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-700 leading-relaxed">{office.address}</span>
+                    </li>
+                    <li className="flex items-center gap-4">
+                      <div className="rounded-full bg-burgundy-50 p-2 flex-shrink-0">
+                        <Mail className="h-6 w-6 text-burgundy-700" />
+                      </div>
+                      <span className="text-gray-600 text-sm font-medium">{office.email}</span>
+                    </li>
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>
@@ -259,7 +235,6 @@ export default function AboutPage() {
                 <p className="text-gray-600">"{testimonial.quote}"</p>
                 <div className="mt-4">
                   <p className="font-semibold">{testimonial.author}</p>
-                  <p className="text-sm text-royalblue-600">{testimonial.company}</p>
                 </div>
               </div>
             ))}

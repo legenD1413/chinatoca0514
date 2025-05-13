@@ -31,7 +31,7 @@ export default function Header() {
           <div className="relative w-[64px] h-[42px]">
             <Image src="/spss-logo.png" alt="SinoPrimeShipping Logo" fill className="object-contain" />
           </div>
-          <span className="text-base font-semibold">SinoPrimeShipping</span>
+          <span className="text-base font-semibold">From China to Canada</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -165,6 +165,12 @@ const services = [
     href: "/services/b2b-fulfillment",
     description: "Business-to-business logistics solutions for importing from China to Canada.",
     icon: Building2,
+  },
+  {
+    title: "Pick and Pack Services",
+    href: "/services/pick-and-pack",
+    description: "Professional picking and packing services ensuring accurate order fulfillment for your customers.",
+    icon: Package,
   },
 ]
 

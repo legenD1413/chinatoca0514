@@ -35,13 +35,6 @@ export default function AmazonFulfillment() {
               <Button size="lg" className="bg-royalblue-700 text-white hover:bg-royalblue-800">
                 Sign Up Free
               </Button>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-white bg-white text-royalblue-700 hover:bg-gray-100"
-              >
-                Talk to Expert
-              </Button>
             </div>
           </div>
         </div>
@@ -325,15 +318,11 @@ export default function AmazonFulfillment() {
                   </li>
                 ))}
               </ul>
-              <div className="pt-4">
-                <Button className="bg-royalblue-700 hover:bg-royalblue-800">
-                  Read Full Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
-              </div>
+
             </div>
-            <div className="flex items-center justify-center">
+                          <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=400&width=500"
+                src="/202505121416.jpeg"
                 width={500}
                 height={400}
                 alt="TechGear Case Study"
@@ -407,9 +396,6 @@ export default function AmazonFulfillment() {
             <div className="flex flex-col gap-4 sm:flex-row">
               <Button size="lg" className="bg-white text-royalblue-800 hover:bg-gray-100">
                 Sign Up Free
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-700">
-                Talk to an Expert
               </Button>
             </div>
           </div>

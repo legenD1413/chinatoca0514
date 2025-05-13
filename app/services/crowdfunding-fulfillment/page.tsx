@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { CheckCircle2, Package, TruckIcon, ClipboardCheck, Users, ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function CrowdfundingFulfillment() {
   return (
@@ -40,15 +41,13 @@ export default function CrowdfundingFulfillment() {
                 </li>
               </ul>
               <div className="flex flex-col gap-4 pt-4 sm:flex-row">
-                <Button size="lg" className="bg-royalblue-700 text-white hover:bg-royalblue-800">
-                  Get A Quote
-                </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white bg-white text-royalblue-700 hover:bg-gray-100"
-                >
-                  Learn More
+                <Link href="/get-a-quote">
+                  <Button size="lg" className="bg-white text-royalblue-800 hover:bg-gray-100">
+                    Get a Free Quote
+                  </Button>
+                </Link>
+                <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-700">
+                  Talk to an Expert
                 </Button>
               </div>
             </div>
@@ -344,9 +343,7 @@ export default function CrowdfundingFulfillment() {
                 ))}
               </ul>
               <div className="pt-4">
-                <Button className="bg-royalblue-700 hover:bg-royalblue-800">
-                  Read Full Case Study <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+               
               </div>
             </div>
           </div>
@@ -391,17 +388,7 @@ export default function CrowdfundingFulfillment() {
               <div key={index} className="rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
                 <p className="mb-4 text-gray-600">"{testimonial.quote}"</p>
                 <div className="flex items-center">
-                  <Image
-                    src={testimonial.image || "/placeholder.svg"}
-                    width={60}
-                    height={60}
-                    alt={testimonial.author}
-                    className="mr-4 rounded-full"
-                  />
-                  <div>
-                    <p className="font-semibold">{testimonial.author}</p>
-                    <p className="text-sm text-royalblue-600">{testimonial.company}</p>
-                  </div>
+                  <p className="font-semibold">{testimonial.author}</p>
                 </div>
               </div>
             ))}
@@ -470,12 +457,11 @@ export default function CrowdfundingFulfillment() {
               </p>
             </div>
             <div className="flex flex-col gap-4 sm:flex-row">
-              <Button size="lg" className="bg-white text-royalblue-800 hover:bg-gray-100">
-                Get a Free Quote
-              </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-royalblue-700">
-                Talk to an Expert
-              </Button>
+              <Link href="/get-a-quote">
+                <Button size="lg" className="bg-white text-royalblue-800 hover:bg-gray-100">
+                  Get a Free Quote
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
@@ -483,6 +469,3 @@ export default function CrowdfundingFulfillment() {
     </div>
   )
 }
-
-// Import Link component
-import Link from "next/link"
